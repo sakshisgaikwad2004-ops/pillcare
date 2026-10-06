@@ -1,0 +1,95 @@
+/* custom.css - Pillcare Medical Healthcare Styling */
+:root {
+  --primary-emerald: #059669;
+  --primary-emerald-hover: #047857;
+  --secondary-blue: #0284c7;
+  --secondary-blue-hover: #0369a1;
+  --accent-cyan: #06b6d4;
+  --surface-bg: #f8fafc;
+  --card-border: #e2e8f0;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text-main);
+  background-color: var(--surface-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Outfit', 'Inter', sans-serif;
+}
+
+/* Accessible focus outlines */
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid #059669;
+  outline-offset: 2px;
+}
+
+/* Card hover transitions */
+.med-card {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid #e2e8f0;
+}
+
+.med-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -6px rgba(5, 150, 105, 0.08), 0 8px 16px -8px rgba(2, 132, 199, 0.08);
+  border-color: #cbd5e1;
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Pulse badge animation for verified pharmacy */
+@keyframes softPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.badge-live {
+  animation: softPulse 2.5s infinite ease-in-out;
+}
+
+/* Hero background medical pattern */
+.hero-pattern {
+  background-color: #f0fdf4;
+  background-image: radial-gradient(#059669 0.75px, transparent 0.75px), radial-gradient(#0284c7 0.75px, #f0fdf4 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* Responsive Modal Fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.modal-animate {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Toast alert notification slide */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.toast-animate {
+  animation: slideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

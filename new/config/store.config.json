@@ -1,0 +1,31 @@
+{
+  "storeName": "Pillcare Medical",
+  "tagline": "Your Trusted Partner in Healthcare",
+  "ownerName": "[Pharmacist / Store Owner Name]",
+  "registrationNumber": "DL-PHARM-2026-9812",
+  "contactNumber": "+91 98765 43210",
+  "whatsappNumber": "919876543210",
+  "email": "care@pillcaremedical.com",
+  "address": {
+    "line1": "Shop No. 12, Healthcare Commercial Complex",
+    "line2": "Opposite City Civil Hospital, Main Medical Road",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400001",
+    "country": "India"
+  },
+  "businessHours": {
+    "weekdays": "Monday - Saturday: 8:00 AM - 10:00 PM",
+    "sunday": "Sunday: 9:00 AM - 2:00 PM",
+    "emergencyNotice": "For urgent overnight medical emergencies, please visit the nearest hospital casualty department."
+  },
+  "googleMaps": {
+    "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.856!2d72.83!3d18.94!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDU2JzI0LjAiTiA3MsKwNDknNDguMCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin",
+    "directionsUrl": "https://maps.google.com/?q=Pillcare+Medical+Store"
+  },
+  "policies": {
+    "prescriptionRequiredNotice": "Prescription medicines (marked Rx) strictly require verification of a valid physical prescription by a licensed pharmacist before dispensing.",
+    "noDirectSaleDisclaimer": "This platform serves as an enquiry, availability check, and pre-verification portal. In strict accordance with the Drugs and Cosmetics Act and applicable pharmacy regulations, medicines are dispensed through registered counter fulfillment.",
+    "privacyCommitment": "Patient contact details and prescription documents are encrypted and treated with medical confidentiality."
+  }
+}

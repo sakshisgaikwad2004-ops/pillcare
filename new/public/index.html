@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pillcare Medical | Your Trusted Partner in Healthcare</title>
+  <meta name="description" content="Explore healthcare products and connect with Pillcare Medical for medicine availability enquiries and registered pharmacy support.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><rect width='48' height='48' rx='12' fill='%23059669'/><rect x='21' y='10' width='6' height='28' rx='3' fill='white'/><rect x='10' y='21' width='28' height='6' rx='3' fill='white'/></svg>">
+
+  <!-- Google Fonts: Inter (Body) & Outfit (Headings) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+            },
+            medical: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Healthcare CSS Styles -->
+  <link rel="stylesheet" href="/css/custom.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
+  <div id="root">
+    <!-- Progressive Fallback Loading Skeleton before React hydration -->
+    <div class="min-h-screen flex items-center justify-center p-6 text-center">
+      <div class="space-y-4 max-w-sm">
+        <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto animate-pulse">
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+          </svg>
+        </div>
+        <div class="font-bold text-slate-800 text-lg">Loading Pillcare Medical...</div>
+        <div class="text-xs text-slate-500">Preparing healthcare catalogue & pharmacy support...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main ES Module React App -->
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
